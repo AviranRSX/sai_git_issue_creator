@@ -88,10 +88,10 @@ Every scene or block must have a time estimate.
 - `HH:MM-HH:MM` Buffer
 
 ## 📤 Output
-What should be produced after the experiment?
+Upload the experiment data to GCP.
 
 ## ✅ Close Criteria
-What must be true to close this issue?
+The experiment data is uploaded to GCP.
 
 ## 🧠 Side Notes
 - N/A

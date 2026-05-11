@@ -33,13 +33,25 @@ If the due date is missing, ask:
 What is the calendar due date for this work?
 ```
 
-If the expected output is missing, ask:
+For an experiment plan issue, if the expected output is missing, use:
+
+```text
+Upload the experiment data to GCP.
+```
+
+For a non-experiment issue, if the expected output is missing, ask:
 
 ```text
 What should this issue output?
 ```
 
-If the close condition is missing, ask:
+For an experiment plan issue, if the close condition is missing, use:
+
+```text
+The experiment data is uploaded to GCP.
+```
+
+For a non-experiment issue, if the close condition is missing, ask:
 
 ```text
 What must be true to close this issue?
