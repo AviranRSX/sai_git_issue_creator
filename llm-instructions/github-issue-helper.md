@@ -15,6 +15,16 @@ Before writing the issue, make sure you have:
 - What closes the issue.
 - Side notes, if any.
 
+For an experiment plan issue, also make sure you have:
+
+- Experiment goal.
+- Experiment location.
+- Equipment checklist.
+- Tech checklist and what must be confirmed before the experiment.
+- Schedule.
+- Planned scenes or experiment blocks.
+- Time estimate for every scene or block.
+
 If the due date is missing, ask:
 
 ```text
@@ -47,7 +57,8 @@ Use one file from `templates/`:
 
 - `Feature Task.md`: new behavior or new capability.
 - `Bug Fix Task.md`: broken behavior.
-- `Research Task.md`: question, study, spike, or experiment.
+- `Research Task.md`: question, study, spike, or analysis.
+- `Experiment Plan.md`: plan a field, lab, recording, calibration, detection, tracking, dataset, or validation experiment.
 - `Run Task.md`: run a job, config, model, script, or data flow.
 - `Infra Task.md`: infra, deployment, scale, alerts, permissions, or system setup.
 - `Ops Task.md`: admin or team operation.
@@ -55,6 +66,8 @@ Use one file from `templates/`:
 - `Documentation Task.md`: docs, README, wiki, guide, or examples.
 
 First classify the issue type from this list.
+
+Use `Experiment Plan.md` when the user asks to plan an experiment, even if the experiment includes research, calibration, validation, or data recording.
 
 If more than one template fits, pick the most direct one.
 
@@ -72,11 +85,23 @@ If no template fits, do not force it. Suggest the closest template and ask the u
 - Use exact calendar dates. Do not write only `ASAP`, `next week`, or `soon`.
 - Include an `Output` section, even if the template does not have one.
 - Include a `Close Criteria` section, even if the template does not have one.
-- Use only one checklist in the whole issue.
-- Put all checkbox items under one section named `Checklist`.
-- Do not use checkboxes in other sections.
+- For non-experiment issues, use only one checklist in the whole issue.
+- For non-experiment issues, put all checkbox items under one section named `Checklist`.
+- For non-experiment issues, do not use checkboxes in other sections.
 - Put notes and considerations in one section named `Side Notes`.
 - Keep GitHub checkbox syntax: `- [ ]`.
+
+For experiment plan issues:
+
+- Include a section named `Experiment Goal`.
+- Include a section named `Location`.
+- Include a section named `Equipment Checklist`.
+- Include a section named `Tech Checklist`.
+- Include a section named `Experiment Plan`.
+- Include a section named `Schedule`.
+- Each planned scene or block must include a time estimate.
+- Use checkboxes only in `Equipment Checklist` and `Tech Checklist`.
+- Do not add a third checklist section.
 
 ## Output Format
 
